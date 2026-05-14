@@ -1,4 +1,8 @@
-# 插件自带的全局规则
+﻿# 插件自带的全局规则
 # 下面规则表示所有请求都会触发插件存在的除了server外的Hooks
 # 该插件只存在 resStatsServer hook
-* whistle.autosave://none
+* whistle.autosave2://none
+# 显式匹配回环地址，确保 127.0.0.1 / localhost / ::1 请求也会触发插件
+127.0.0.1 whistle.autosave2://none
+localhost whistle.autosave2://none
+[::1] whistle.autosave2://none

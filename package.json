@@ -1,11 +1,12 @@
-{
-  "name": "whistle.autosave",
-  "version": "0.1.0",
-  "description": "自动保存指定抓包数据到本地目录",
+﻿{
+  "name": "whistle.autosave2",
+  "version": "0.2.0",
+  "description": "自动保存指定抓包数据到本地目录（支持回环地址与路径化文件名）",
   "main": "./lib",
   "scripts": {
     "lint": "eslint lib",
-    "lintfix": "eslint --fix lib"
+    "lintfix": "eslint --fix lib",
+    "install:global": "npm install --production && npm install -g ."
   },
   "dependencies": {
     "koa": "^2.6.2",
